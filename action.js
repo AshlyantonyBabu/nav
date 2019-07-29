@@ -1,4 +1,18 @@
-
+$(document).ready(function(){
+    $("a.scrollLink").click(function(event){
+        event.preventDefault();
+        $("html,body").animate({
+            scrollTop:
+            $($(this).attr("href")).offset().top
+        },500);
+    });
+    // $("#homesec").click(function(event){                
+    //     $("#para1").move();
+    // });
+    // $("#stusec").click(function(){
+    //     $("#para2").css("color","red");
+    // });
+});
 $(document).ready(function(){
     $("#p1").hover(function(){
         $(this).css("color","blue");
