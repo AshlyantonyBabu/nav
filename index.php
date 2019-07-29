@@ -1,3 +1,3 @@
 <?php
-header("Location","jqwrk")
+header("Location","jqwrk.html")
 ?>
